@@ -1,4 +1,4 @@
-package hello;
+package com.github.punkkk.helloSpring;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,4 +11,8 @@ public class HelloController {
         return "Hello world";
     }
 
+    @RequestMapping("/somesthing")
+    public Something something () {
+        return new Something(100L, "seledok");
+    }
 }
